@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Mikado";
+  src: url("./assets/MIKADOBOLD_DEMO.OTF");
+}
