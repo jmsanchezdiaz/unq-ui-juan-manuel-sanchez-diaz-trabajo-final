@@ -22,6 +22,9 @@ const useAudio = (url) => {
     }
   };
 
+  const volume = (value) =>
+    audioRef.current && (audioRef.current.volume = value);
+
   const pause = () => {
     audioRef?.current && audioRef.current.pause();
     setAudioTurnOff(true);
@@ -33,7 +36,16 @@ const useAudio = (url) => {
   };
   const changeFor = (url) => (audioRef.current.src = url);
 
-  return { audioRef, audioTurnOff, play, pause, toggle, stop, changeFor };
+  return {
+    audioRef,
+    audioTurnOff,
+    play,
+    pause,
+    volume,
+    toggle,
+    stop,
+    changeFor
+  };
 };
 
 export default useAudio;

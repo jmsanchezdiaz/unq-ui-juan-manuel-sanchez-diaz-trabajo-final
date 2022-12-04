@@ -3,12 +3,15 @@ import { AiOutlineSound } from "react-icons/ai";
 import useAudio from "../hooks/useAudio";
 
 const Layout = ({ children }) => {
-  const { play, toggle, audioTurnOff } = useAudio(
+  const { play, toggle, audioTurnOff, volume } = useAudio(
     "/public/assets/sounds/background_music.mp3"
   );
 
   useEffect(() => {
-    !audioTurnOff && play(true);
+    if (!audioTurnOff) {
+      volume(0.1);
+      play(true);
+    }
   }, []);
 
   return (
