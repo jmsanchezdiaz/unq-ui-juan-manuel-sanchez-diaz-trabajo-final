@@ -23,7 +23,7 @@ const WinnerModal = ({ open }) => {
     <dialog
       open={open}
       ref={modalRef}
-      onClose={() => console.log("closing")}
+      onClose={handleModalClose}
       className="fixed z-10 inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
       <div className="relative  mx-auto p-3 border w-96 shadow-lg rounded-md bg-white space-y-3">
         <h2 className="text-2xl font-bold">Congratulations! 🏆</h2>
