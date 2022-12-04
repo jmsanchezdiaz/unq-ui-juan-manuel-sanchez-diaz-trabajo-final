@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Mikado";
-  src: url("./public/assets/MIKADOBOLD_DEMO.OTF");
+  src: url("public/assets/MIKADOBOLD_DEMO.OTF");
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: url("./public/assets/image/background_image.png");
+  background: url("public/assets/image/background_image.png");
 }
 
 .button {
