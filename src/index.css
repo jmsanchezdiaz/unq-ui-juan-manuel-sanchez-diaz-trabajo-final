@@ -4,5 +4,33 @@
 
 @font-face {
   font-family: "Mikado";
-  src: url("./assets/MIKADOBOLD_DEMO.OTF");
+  src: url("./public/assets/MIKADOBOLD_DEMO.OTF");
+}
+
+html {
+  font-size: 21.5px;
+}
+
+body {
+  background: url("./public/assets/image/background_image.png");
+}
+
+.button {
+  @apply rounded-lg font-bold px-4 py-2;
+}
+
+.button-success {
+  @apply button bg-green-500 text-white hover:bg-green-600;
+}
+
+.button-danger {
+  @apply button bg-red-500 text-white hover:bg-red-600;
+}
+
+.button-violet {
+  @apply button bg-violet-500 text-white hover:bg-violet-600;
+}
+
+.button-warning {
+  @apply button px-4 py-2 bg-yellow-600 text-white font-bold hover:bg-yellow-800;
 }
