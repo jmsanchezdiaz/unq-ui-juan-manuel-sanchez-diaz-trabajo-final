@@ -31,7 +31,7 @@ const WinnerModal = ({ open }) => {
           You have completed the quiz. You can now go back to the home page.
         </p>
         <img
-          src="/public/assets/image/winner meme.gif"
+          src="public/assets/image/winner meme.gif"
           className="w-full"
           alt="winner meme gif"
         />
